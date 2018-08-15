@@ -1,5 +1,38 @@
-# yaep
-Yet Another Express Project
+# yaep: Yet Another Express Project
 
 ## requirements
-pm2
+- express
+- twig
+- pm2
+
+## installation
+- to start with yaep do:
+```
+	git clone git@github.com:AndrewCherabaev/yaep.git
+	cd yaep
+	npm i
+	npm start
+```
+- after `npm start` pm2-process will started and you can see everything by `pm2 ls`
+- default config for pm is:
+```yaml
+apps:
+  - script      : ./bin/www
+    name        : yaep
+    watch       : true
+    exec_mode   : fork
+    instances   : 1
+    error_file  : './err.log'
+    out_file    : './out.log'
+    autorestart : true
+```
+
+
+## about
+it's really "Yet Another EpressJS project"
+it's build on top of epressjs and uses pm2 as process manager
+
+## trouleshooting
+pm2 logs have ANSIColor format and `--no-color` flag still not works properly
+so for SublimeText 3, should you choose to use it, needs to install [this ANSI format plugin](https://github.com/aziz/SublimeANSI "ANSI escape codes color plugin for SublimeText 3")
+after that you can open \*.log files in SublimeText 3 and do `View -> Syntax -> ANSI` to see well-formated logs

@@ -1,3 +1,10 @@
 apps:
-  - script: ./bin/www
-    watch : true
+  - script      : ./bin/www
+    name        : yaep
+    watch       : true
+    exec_mode   : fork
+    instances   : 1
+    error_file  : './err.log'
+    out_file    : './out.log'
+    autorestart : true
+    no-color    : true
