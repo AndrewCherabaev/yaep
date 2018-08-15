@@ -1,10 +1,10 @@
 apps:
   - script      : ./bin/www
     name        : yaep
-    watch       : true
     exec_mode   : fork
-    instances   : 1
-    error_file  : './err.log'
-    out_file    : './out.log'
     autorestart : true
-    no-color    : true
+    watch       : true
+    instances   : 1
+    merge_logs  : true
+    error_file  : './logs/error.log'
+    out_file    : './logs/access.log'

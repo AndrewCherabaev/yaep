@@ -34,14 +34,18 @@ it's build on top of epressjs and uses pm2 as process manager
 i can say i try to write yet another application does everything at all
 
 ## future plans
-- +`passport.js` for auth
-- +`socket.io` for websockets
+- `passport.js` for auth
+- `socket.io` for websockets
 
-- +`sequelize` for databases
-- +`elasticsearch-js` for elasticsearch
+- `sequelize` for databases
+- `elasticsearch-js` for elasticsearch
 
-- +`i18n` for internationalisation
-- +`nedb` for something
+- `i18n` for internationalisation
+- `nedb` for something
+
+- `webpack` for building
+- `bower` for browser libraries
+- `dotenv` or `dotenv-safe` for environment
 
 
 ## trouleshooting
