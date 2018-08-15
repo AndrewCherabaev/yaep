@@ -31,6 +31,18 @@ apps:
 ## about
 it's really "Yet Another EpressJS project"
 it's build on top of epressjs and uses pm2 as process manager
+i can say i try to write yet another application does everything at all
+
+## future plans
+- +`passport.js` for auth
+- +`socket.io` for websockets
+
+- +`sequelize` for databases
+- +`elasticsearch-js` for elasticsearch
+
+- +`i18n` for internationalisation
+- +`nedb` for something
+
 
 ## trouleshooting
 pm2 logs have ANSIColor format and `--no-color` flag still not works properly
