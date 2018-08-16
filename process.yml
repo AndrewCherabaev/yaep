@@ -10,4 +10,4 @@ apps:
     out_file:     './logs/access.log'
     env:
       PORT:       3000
-      NODE_PATH:  './'
+      NODE_PATH:  './app'
