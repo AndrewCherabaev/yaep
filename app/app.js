@@ -14,7 +14,7 @@ app.use(session({
   resave: true,
   saveUninitialized: true,
   cookie: {
-      path: '/',
+      path: '/*',
       maxAge: 3600 * 1000   // One hour
   },
   store: new nedbStore({ filename: 'storage/session.json' })
