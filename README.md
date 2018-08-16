@@ -28,7 +28,7 @@ apps:
     out_file:     './logs/access.log'
     env:
       PORT:       3000
-      NODE_PATH:  './'
+      NODE_PATH:  './app'
 ```
 last line in `env` params helps me to require modules from app root like `require('controllers/index')` and not like `require('./../controllers/index')`
 
@@ -41,6 +41,7 @@ i can say i try to write yet another application does everything at all
 
 ## future plans
 - ~~move everuthing the app folder~~ new project root `app/`
+- [`express-laravel-router`](https://www.npmjs.com/package/express-laravel-router) for avesome [Laravel](https://laravel.com)-style routing
 - `passport.js` for auth
 - `socket.io` for websockets
 - `sequelize` for databases
@@ -50,7 +51,6 @@ i can say i try to write yet another application does everything at all
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
-- [`express-laravel-router`](https://www.npmjs.com/package/express-laravel-router) for avesome [Laravel](https://laravel.com)-style routing
 
 
 ## trouleshooting
