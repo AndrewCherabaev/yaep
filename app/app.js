@@ -11,11 +11,13 @@ var app = express();
 // setup session
 app.use(session({
   secret: 'default secret key',
+  resave: true,
+  saveUninitialized: true,
   cookie: {
       path: '/',
       maxAge: 3600 * 1000   // One hour
   },
-  store: new nedbStore({ filename: path.join(__dirname, '../storage/session') })
+  store: new nedbStore({ filename: 'storage/session.json' })
 }));
 
 // view engine setup
