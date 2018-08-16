@@ -40,6 +40,8 @@ it's build on top of epressjs and uses pm2 as process manager
 i can say i try to write yet another application does everything at all
 
 ## future plans
+in general, future plans is to add some useful (really useful) modules as much as possible
+
 - ~~move everuthing the app folder~~ new project root `app/`
 - [`express-laravel-router`](https://www.npmjs.com/package/express-laravel-router) for avesome [Laravel](https://laravel.com)-style routing
 - `passport.js` for auth
@@ -51,6 +53,7 @@ i can say i try to write yet another application does everything at all
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
+- [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 
 
 ## trouleshooting
