@@ -43,12 +43,13 @@ i can say i try to write yet another application does everything at all
 in general, future plans is to add some useful (really useful) modules as much as possible
 
 - ~~move everuthing the app folder~~ new project root `app/`
+- ~~`express-session` for sessions~~ 
+- ~~`nedb` for something~~ `nedb` + `nedb-session-store` as session storage
 - `passport.js` for auth
 - `socket.io` for websockets
 - `sequelize` for databases
 - `elasticsearch-js` for elasticsearch
 - `i18n` for internationalisation
-- `nedb` for something
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
