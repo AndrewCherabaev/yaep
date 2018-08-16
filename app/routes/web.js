@@ -5,5 +5,5 @@ router.route('/')
 	.get(indexController.index);
 router.route('/users')
 	.get(function(req, res, next){
-		res.send('users');
+		res.send('respond with a resource');
 	});

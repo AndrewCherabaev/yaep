@@ -1,9 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
 var session = require('express-session');
-var nedbStore = require('nedb-session-store')(session);
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
@@ -11,13 +9,12 @@ var app = express();
 // setup session
 app.use(session({
   secret: 'default secret key',
-  resave: true,
+  resave: false,
   saveUninitialized: true,
   cookie: {
-      path: '/*',
-      maxAge: 3600 * 1000   // One hour
-  },
-  store: new nedbStore({ filename: 'storage/session.json' })
+      path: '/',
+      maxAge: 36000   // Ten minutes
+  }
 }));
 
 // view engine setup
@@ -27,7 +24,6 @@ app.set('view engine', 'twig');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './../public')));
 
 // routes

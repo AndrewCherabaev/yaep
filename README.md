@@ -44,7 +44,6 @@ in general, future plans is to add some useful (really useful) modules as much a
 
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
-- ~~nedb for something~~ `nedb` + `nedb-session-store` as session storage
 - `passport.js` for auth
 - `socket.io` for websockets
 - `sequelize` for databases
@@ -53,6 +52,7 @@ in general, future plans is to add some useful (really useful) modules as much a
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
+- `nedb` for something
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 
 
