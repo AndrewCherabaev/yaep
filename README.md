@@ -43,7 +43,6 @@ i can say i try to write yet another application does everything at all
 in general, future plans is to add some useful (really useful) modules as much as possible
 
 - ~~move everuthing the app folder~~ new project root `app/`
-- [`express-laravel-router`](https://www.npmjs.com/package/express-laravel-router) for avesome [Laravel](https://laravel.com)-style routing
 - `passport.js` for auth
 - `socket.io` for websockets
 - `sequelize` for databases
