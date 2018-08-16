@@ -1,25 +1,26 @@
 - ./
 	- bin/
 	- app/
+		- app.js
+		- config/
 		- controllers/
-		- models/
+		- database/
+			- migrations/
+			- seeds/
 		- middleware/ 
+		- models/
+		- routes/
+			- web.js
+			- api.js
+		- resources/
+			- views/
+			- lang/
 		- services/
-	- config/
-	- database/
-		- migrations/
-		- seeds/
 	- docs/
 	- public/
-	    - js
-	    - css
-	    - images
-	- resources/
-	    - views/
-	    - lang/
-	- routes/
-	    - web.js
-	    - api.js
+		- js
+		- css
+		- images
 	- .env
 	- .env.example
 	- package.json
