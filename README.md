@@ -17,16 +17,20 @@
 - default config for pm is:
 ```yaml
 apps:
-  - script      : ./bin/www
-    name        : yaep
-    watch       : true
-    exec_mode   : fork
-    instances   : 1
-    error_file  : './err.log'
-    out_file    : './out.log'
-    autorestart : true
+  - script:       ./bin/www
+    name:         yaep
+    exec_mode:    fork
+    autorestart:  true
+    watch:        true
+    instances:    1
+    merge_logs:   true
+    error_file:   './logs/error.log'
+    out_file:     './logs/access.log'
+    env:
+      PORT:       3000
+      NODE_PATH:  './'
 ```
-
+last line in `env` params helps me to require modules from app root like `require('controllers/index')` and not like `require('./../controllers/index')`
 
 ## about
 it's really "Yet Another EpressJS project"
