@@ -50,6 +50,7 @@ i can say i try to write yet another application does everything at all
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
+- [`express-laravel-router`](https://www.npmjs.com/package/express-laravel-router) for avesome [Laravel](https://laravel.com)-style routing
 
 
 ## trouleshooting
