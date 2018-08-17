@@ -43,6 +43,7 @@ i can say i try to write yet another application does everything at all
 in general, future plans is to add some useful (really useful) modules as much as possible
 
 ### nodules
+_yes, because i mean 'node modules'_
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
 - `passport.js` for auth
