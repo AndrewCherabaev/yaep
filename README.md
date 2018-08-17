@@ -42,6 +42,7 @@ i can say i try to write yet another application does everything at all
 ## future plans
 in general, future plans is to add some useful (really useful) modules as much as possible
 
+### nodules
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
 - `passport.js` for auth
@@ -54,6 +55,10 @@ in general, future plans is to add some useful (really useful) modules as much a
 - `dotenv` or `dotenv-safe` for environment
 - `nedb` for something (admin tables?)
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
+
+### features
+- admin panel
+- CMS with built-in editior
 
 
 ## trouleshooting
