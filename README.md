@@ -52,7 +52,8 @@ in general, future plans is to add some useful (really useful) modules as much a
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
-- `nedb` for something
+- `nedb` for something (admin tables?)
+- `express-http-proxy` for [using URL instead of localhost:3000](https://github.com/BlakeSimpson/local-ip-proxy)
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 
 
