@@ -60,6 +60,7 @@ _yes, because i mean 'node modules'_
 ### features
 - admin panel
 - CMS with built-in editior
+- CLI application `yaep` for generating some
 
 
 ## trouleshooting

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var program = require('./bin/console');
+// if you have your own console commands
+	require('./app/console')(program);
+program.parse(process.argv);
