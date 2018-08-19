@@ -61,7 +61,7 @@ _yes, because i mean 'node modules'_
 - admin panel
 - CMS with built-in editior
 - CLI application `yaep` for generating some
-  + published as `yaep-consolidator` foreign module
+  + published as [`yaep-consolidator`](https://www.npmjs.com/package/yaep-consolidator) foreign module
 
 
 ## trouleshooting
