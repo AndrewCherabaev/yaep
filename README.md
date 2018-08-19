@@ -61,8 +61,7 @@ _yes, because i mean 'node modules'_
 - admin panel
 - CMS with built-in editior
 - CLI application `yaep` for generating some
-  + started empty CLI with `echo|echo:text`
-  + added no-arguments catching
+  + published as `yaep-consolidator` foreign module
 
 
 ## trouleshooting
