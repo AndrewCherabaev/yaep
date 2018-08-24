@@ -46,15 +46,17 @@ in general, future plans is to add some useful (really useful) modules as much a
 _yes, because i mean 'node modules'_
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
-- `passport.js` for auth
+- `passport.js` or `grant` for auth
 - `socket.io` for websockets
 - `sequelize` for databases
+- `knex` for query builder
+- `finale` for RESTify models
 - `elasticsearch-js` for elasticsearch
 - `i18n` for internationalisation
 - `webpack` for building
 - `bower` for browser libraries
 - `dotenv` or `dotenv-safe` for environment
-- `nedb` for something (admin tables?)
+- `nedb` and `lowdb` for something (admin tables?)
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 
 ### features
