@@ -7,7 +7,7 @@
 
 ## installation
 - to start with yaep do:
-```
+```bash
 	git clone git@github.com:AndrewCherabaev/yaep.git
 	cd yaep
 	npm i
