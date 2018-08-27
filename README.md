@@ -8,10 +8,10 @@
 ## installation
 - to start with yaep do:
 ```bash
-	git clone git@github.com:AndrewCherabaev/yaep.git
-	cd yaep
-	npm i
-	npm start
+git clone git@github.com:AndrewCherabaev/yaep.git
+cd yaep
+npm i
+npm start
 ```
 - after `npm start` pm2-process will started and you can see everything by `pm2 ls`
 - default config for pm is:
@@ -47,6 +47,7 @@ _yes, because i mean 'node modules'_
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
 - [`passport.js`](http://www.passportjs.org) for auth
+- [`joi`](https://github.com/hapijs/joi) for validator
 - [`socket.io`](https://socket.io) for websockets
 - [`sequelize`](http://docs.sequelizejs.com) for databases
 - [`knex`](https://knexjs.org) plus [`bookshelf`](http://bookshelfjs.org) for query builder
@@ -57,6 +58,7 @@ _yes, because i mean 'node modules'_
 - [`bower`](https://bower.io) for browser libraries
 - [`dotenv`](https://github.com/motdotla/dotenv) or [`dotenv-safe`](https://github.com/rolodato/dotenv-safe) for environment
 - [`nedb`](https://github.com/louischatriot/nedb) and [`lowdb`](https://github.com/typicode/lowdb) for something (admin tables?)
+- [`lodash`](https://lodash.com) or [`underscore`](https://underscorejs.org) for functional
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 
 ### features
@@ -64,6 +66,7 @@ _yes, because i mean 'node modules'_
 - CMS with built-in editior
 - CLI application `yaep` for generating some
   + published as [`yaep-consolidator`](https://www.npmjs.com/package/yaep-consolidator) foreign module
+- [`bootstrap`](http://getbootstrap.com)/[`foundation`](https://foundation.zurb.com)/[`semantic-ui`](https://semantic-ui.com)/[`material`](https://material.io/design/), [`fa`](https://fontawesome.com) for frontent design
 
 
 ## trouleshooting
