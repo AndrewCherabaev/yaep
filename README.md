@@ -46,6 +46,7 @@ in general, future plans is to add some useful (really useful) modules as much a
 _yes, because i mean 'node modules'_
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
+- ~~nedb or lowdb for something~~ use [`lowdb`](https://github.com/typicode/lowdb) as default driver. nedb not works fine for me
 - [`passport.js`](http://www.passportjs.org) for auth
 - [`joi`](https://github.com/hapijs/joi) for validator
 - [`socket.io`](https://socket.io) for websockets
@@ -57,7 +58,6 @@ _yes, because i mean 'node modules'_
 - [`webpack`](https://webpack.js.org) for building
 - [`bower`](https://bower.io) for browser libraries
 - [`dotenv`](https://github.com/motdotla/dotenv) or [`dotenv-safe`](https://github.com/rolodato/dotenv-safe) for environment
-- [`nedb`](https://github.com/louischatriot/nedb) and [`lowdb`](https://github.com/typicode/lowdb) for something (admin tables?)
 - [`lodash`](https://lodash.com) or [`underscore`](https://underscorejs.org) for functional
 - [`babel-cli`](https://babeljs.io/docs/en/babel-cli) and [`babel-preset-env`](https://babeljs.io/docs/en/babel-preset-env/) for `import ... from` and `exports` ES6 fetures; or not
 

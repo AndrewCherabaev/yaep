@@ -6,7 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Runtime data
-storage
+~storage
+storage/*
 pids
 *.pid
 *.seed

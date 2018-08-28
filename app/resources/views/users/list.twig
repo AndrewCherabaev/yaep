@@ -1,0 +1,9 @@
+{% extends '../layout.twig' %}
+
+{% block body %}
+	<ul>
+  		{% for username in users%}
+  			<li>{{ username }}</li>
+  		{% endfor %}
+  	</ul>
+{% endblock %}

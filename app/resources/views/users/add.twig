@@ -1,0 +1,10 @@
+{% extends '../layout.twig' %}
+
+{% block body %}
+  <form method="POST" action="/users/add">
+  	<input type="text" name="username">
+  	<input type="password" name="password">
+
+  	<button type="submit">add</button>
+  </form>
+{% endblock %}
