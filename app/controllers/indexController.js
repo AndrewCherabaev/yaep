@@ -1,4 +1,5 @@
-var db = require('database/db.js');
+var Users = require('database/db.js').users;
+var UserValidator= require('middleware/user_validator');
 
 function IndexController() { 					//Functional inheritance class style
 
@@ -11,28 +12,27 @@ function IndexController() { 					//Functional inheritance class style
 	}
 
 	this.create = function(req, res) {
-		var users = db.users,
-			body  = req.body;
+		var body  = req.body;
+		var result = UserValidator(body);
 
-		id = users.size().value();
+		if (result.error) {
+			message = result.error.details[0].message;
+			error = {
+				status: result.error.name
+			};
+			res.render('error', {message, error})
+		} else {
+			Users.push(body).write();
+			res.redirect('/users');
+		}
 
-		users.push({
-			id: 	  id+1,
-			username: body.username,
-			password: body.password
-		}).write();
-
-		res.redirect('/users');
 	}
 
 	this.list = function(req, res) {
-		var users = db.users.map('username').value();
+		var users = Users.map('username').value();
 
 		res.render('users/list', {users});
 	}
-
-
-
 }
 
 module.exports = new IndexController();			//Use 'exports new' instead of "static" methods of class

@@ -1,9 +1,13 @@
 {% extends '../layout.twig' %}
 
 {% block body %}
+	{% if users.length%}
 	<ul>
   		{% for username in users%}
   			<li>{{ username }}</li>
   		{% endfor %}
   	</ul>
+  	{% else %}
+  		No users found
+  	{% endif %}
 {% endblock %}

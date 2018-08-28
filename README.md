@@ -47,8 +47,8 @@ _yes, because i mean 'node modules'_
 - ~~move everything the app folder~~ new project root `app/`
 - ~~express-session for sessions~~ 
 - ~~nedb or lowdb for something~~ use [`lowdb`](https://github.com/typicode/lowdb) as default driver. nedb not works fine for me
+- ~~joi for validator~~ [`joi`](https://github.com/hapijs/joi) used for validating requests
 - [`passport.js`](http://www.passportjs.org) for auth
-- [`joi`](https://github.com/hapijs/joi) for validator
 - [`socket.io`](https://socket.io) for websockets
 - [`sequelize`](http://docs.sequelizejs.com) for databases
 - [`knex`](https://knexjs.org) plus [`bookshelf`](http://bookshelfjs.org) for query builder
