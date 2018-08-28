@@ -1,13 +1,15 @@
 {% extends '../layout.twig' %}
 
 {% block body %}
+	{% if message %}<h2>{{ message }}</h2>{%endif%}
+	<a href="/users/add"> add new </a>
 	{% if users.length%}
 	<ul>
-  		{% for username in users%}
-  			<li>{{ username }}</li>
-  		{% endfor %}
-  	</ul>
-  	{% else %}
-  		No users found
-  	{% endif %}
+		{% for username in users%}
+			<li>{{ username }}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		No users found
+	{% endif %}
 {% endblock %}

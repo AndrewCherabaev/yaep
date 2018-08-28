@@ -3,6 +3,7 @@ var express = require('express');
 var session = require('express-session');
 var path = require('path');
 var logger = require('morgan');
+var flash = require('connect-flash');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, './../public')));
+app.use(flash());
 
 // routes
 app.use('/', require('./routes/web'));

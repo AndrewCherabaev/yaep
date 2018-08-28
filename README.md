@@ -48,6 +48,7 @@ _yes, because i mean 'node modules'_
 - ~~express-session for sessions~~ 
 - ~~nedb or lowdb for something~~ use [`lowdb`](https://github.com/typicode/lowdb) as default driver. nedb not works fine for me
 - ~~joi for validator~~ [`joi`](https://github.com/hapijs/joi) used for validating requests
+- ~~connect-flash~~ `connect-flash` for flash messages
 - [`passport.js`](http://www.passportjs.org) for auth
 - [`socket.io`](https://socket.io) for websockets
 - [`sequelize`](http://docs.sequelizejs.com) for databases

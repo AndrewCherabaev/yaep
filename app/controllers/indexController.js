@@ -1,5 +1,5 @@
 var Users = require('database/db.js').users;
-var UserValidator= require('middleware/user_validator');
+var UserValidator= require('validators/user_validator');
 
 function IndexController() { 					//Functional inheritance class style
 
@@ -8,7 +8,7 @@ function IndexController() { 					//Functional inheritance class style
 	}
 
 	this.add = function(req, res) {
-		res.render('users/add');
+		res.render('users/add', req.flash('error')[0]);
 	}
 
 	this.create = function(req, res) {
@@ -16,22 +16,22 @@ function IndexController() { 					//Functional inheritance class style
 		var result = UserValidator(body);
 
 		if (result.error) {
-			message = result.error.details[0].message;
-			error = {
-				status: result.error.name
-			};
-			res.render('error', {message, error})
+			req.flash('error', {err: result.error.details[0].message, data:body});
+
+			res.redirect('/users/add')
 		} else {
 			Users.push(body).write();
+			req.flash('succes', 'created');
 			res.redirect('/users');
 		}
 
 	}
 
 	this.list = function(req, res) {
+		message = req.flash('succes');
 		var users = Users.map('username').value();
 
-		res.render('users/list', {users});
+		res.render('users/list', {users, message});
 	}
 }
 

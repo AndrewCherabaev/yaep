@@ -1,10 +1,10 @@
 {% extends '../layout.twig' %}
 
 {% block body %}
-  <form method="POST" action="/users/add">
-  	<input type="text" name="username">
-  	<input type="password" name="password">
-
-  	<button type="submit">add</button>
-  </form>
+	{% if err %} <h2>{{err}}</h2> {% endif %}
+	<form method="POST" action="/users/add">
+		<input type="text" name="username" {%if data %} value="{{data.username}}" {%endif%}>
+		<input type="password" name="password" {%if data %} value="{{data.password}}" {%endif%}>
+		<button type="submit">add</button>
+	</form>
 {% endblock %}
