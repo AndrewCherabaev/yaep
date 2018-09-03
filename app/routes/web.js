@@ -1,12 +1,7 @@
 module.exports = router = require('express').Router();
-var indexController = require('controllers/indexController');
+var indexController = new (require('controllers/indexController'));
 
 router.route('/')
 	.get(indexController.index);
-
-router.route('/users')
-	.get(indexController.list);
-
-router.route('/users/add')
-	.get(indexController.add)
-	.post(indexController.create);
+router.route('/:id')
+	.get(indexController.show);
